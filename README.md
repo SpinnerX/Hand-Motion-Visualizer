@@ -2,13 +2,12 @@
 
 
 # Overview
-** Hand Segmentation **
+
+## Hand Segmentation
 - Segementation refers to the process of extracting objects of interest from an image. In this case, the hand is our
 
-** Hand Contours **
 
-** FingerPoints.cc Class **
-
+## FingerPoints
 Identifying The Finger Points
 - Points of intersection between the hand contour and convex hull are saved in an array (vector), then will locate the finger tips.
 
@@ -38,7 +37,6 @@ Identifying The Finger Points
 
 
 # Implementation Details
-
 - Along with four contours
     + Actual Frame Output (what the camera actually outputs) \
     + foreground, which shades the camera into a grayish look \
