@@ -40,26 +40,25 @@ Identifying The Finger Points
 # Implementation Details
 
 - Along with four contours
-    + Actual Frame Output (what the camera actually outputs)
-    + foreground, which shades the camera into a grayish look
-    + hand mask, which draws what the camera sees by highlighting in series of points. In color black and white.
+    + Actual Frame Output (what the camera actually outputs) \
+    + foreground, which shades the camera into a grayish look \
+    + hand mask, which draws what the camera sees by highlighting in series of points. In color black and white. \
     + hand detection, which actually handles detecting palms, and finger tips. Such as our starting point and ending points of the hand positions
 
-- These four contours, are all part of hand segmentation
-    + Since, they are relatively invoving in seeing the computer can envision how skin, and handling tracking backgrounds such as include and excluding them.
+- These four contours, are all part of hand segmentation \
+    + Since, they are relatively invoving in seeing the computer can envision how skin, and handling tracking backgrounds such as include and excluding them. \
     + Also, helps handle segmenting effects within or around the hand.
 
-1.) Implementing background parser
-    + Calibrating the parser to exclude anything behind the user in front of the camera.
-    + Parsing background objects.
+1.) Implementing background parser \
+    + Calibrating the parser to exclude anything behind the user in front of the camera. \
+    + Parsing background objects. \
     + Anything in the background gets parsed out the camera viewpoint.
 
 
 # TODO
-- Optimizing Code
-    + Post Estimation
-	+ Apply anti-aliasing
-	+ SIMD
+- Optimizing Code \
+    + Post Estimation \
+	+ Apply anti-aliasing \
+	+ SIMD \
 	+ Improve frame quality
 
-![](/Users/aaronher/Desktop/Video1.mp4)
